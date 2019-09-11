@@ -127,15 +127,15 @@ We may release future updates so it will overwrite this file. it's better and sa
     /*========================
     08: Video Popup
     ==========================*/
-    var $popUpVideo = $('.popup-video');
-    if ($popUpVideo.length) {
-        $popUpVideo.magnificPopup({
-            type: 'iframe'
-        });
-    };
+    // var $popUpVideo = $('.popup-video');
+    // if ($popUpVideo.length) {
+    //     $popUpVideo.magnificPopup({
+    //         type: 'iframe'
+    //     });
+    // };
 
     /*==================================
-    09: Changing svg color 
+    09: Changing svg color
     ====================================*/
     jQuery('img.svg').each(function () {
         var $img = jQuery(this);
@@ -171,7 +171,7 @@ We may release future updates so it will overwrite this file. it's better and sa
     });
 
     /*==================================
-    10: Google map 
+    10: Google map
     ====================================*/
     var $map = $('[data-trigger="map"]'),
         $mapOps;
@@ -197,7 +197,7 @@ We may release future updates so it will overwrite this file. it's better and sa
                     scrollwheel: false,
                     disableDefaultUI: true,
                     zoomControl: true,
-                    styles: 
+                    styles:
                         [
                             {
                                 "featureType": "all",
@@ -381,7 +381,7 @@ We may release future updates so it will overwrite this file. it's better and sa
     };
 
     /*==================================
-    11: Preloader 
+    11: Preloader
     ====================================*/
     $(window).on('load', function () {
         $('.preloader').fadeOut(1000);
@@ -390,28 +390,28 @@ We may release future updates so it will overwrite this file. it's better and sa
     /*==================================
     12: Isotope
     ====================================*/
-    $(window).on('load', function () {
-        $('.project-items').isotope({
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            animationOptions: {
-                duration: 750,
-                easing: "linear",
-                queue: false
-            },
-            masonry: {
-                columnWidth: '.grid-item'
-            }
-        });
-
-        $('.project_filter li').on('click', function () {
-            $(this).addClass('active').siblings().removeClass('active');
-            var filterValue = $(this).attr('data-filter');
-            $('.grid').isotope({
-                filter: filterValue
-            });
-        });
-    });
+    // $(window).on('load', function () {
+    //     $('.project-items').isotope({
+    //         itemSelector: '.grid-item',
+    //         percentPosition: true,
+    //         animationOptions: {
+    //             duration: 750,
+    //             easing: "linear",
+    //             queue: false
+    //         },
+    //         masonry: {
+    //             columnWidth: '.grid-item'
+    //         }
+    //     });
+    //
+    //     $('.project_filter li').on('click', function () {
+    //         $(this).addClass('active').siblings().removeClass('active');
+    //         var filterValue = $(this).attr('data-filter');
+    //         $('.grid').isotope({
+    //             filter: filterValue
+    //         });
+    //     });
+    // });
 
     /*==================================
     13: Contact Form
